@@ -1,0 +1,319 @@
+*,::after,::before{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: Circe;
+}
+.container{
+    max-width: 1230px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+    border:none;
+    color: #fff;
+}
+ul{
+    list-style: none;
+}
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+}
+p{
+    margin: 0;
+}
+/* =======================================================================================================
+                                                About
+=========================================================================================================*/
+.about{
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/bg-about.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100vh;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    padding: 33px 180px;
+    align-items: center;
+    border-bottom: 1px solid #FFF;
+}
+.menu__list{
+    display: flex;
+    justify-content: space-between;
+}
+.menu__list--item{
+    margin-right: 47px;
+}
+.menu__list--link{
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+.menu__search{
+    display: flex;
+}
+.search__icon{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    margin-right: 70px;
+}
+.language__select{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+}
+.about__inner{
+    padding-top: 180px;
+    color: #fff;
+}
+.about__main--title{
+    font-size: 64px;
+    font-weight: bold;
+    line-height: 2;
+    margin:0 0 35px;
+    font-family: Plumb;
+}
+.about__main--text{
+    font-size: 24px;
+    line-height: 1.8;
+    margin: 0 0 25px;
+    width: 350px;
+}
+.about__main--link{
+    text-decoration: underline;
+}
+.arrow{
+    margin-left: 10px;
+}
+.block-wrapper__first{
+    display: flex;
+    justify-content: flex-end;
+}
+.block__item{
+    width: 255px;
+    padding: 30px 40px;
+}
+.first__item{
+    background: #2378FC;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    height: 148px;
+}
+.wrapper__item--title{
+    font-size: 21px;
+    margin-bottom: 15px;
+}
+.second__item{
+    background: #30BCC9;
+    margin-bottom: 30px;
+    height: 148px;
+}
+.block-wrapper__second{
+    display: flex;
+    justify-content: flex-end;
+}
+.third__item{
+    background: #FFC41E;
+    margin-right: 30px;
+}
+.fourth__item{
+    background: #f6404f;
+}
+/* =======================================================================================================
+                                                About lower menu
+=========================================================================================================*/
+.about__lower--menu{
+    background: #2378FC;
+    padding: 75px 400px;
+}
+.lower--menu__inner{
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+}
+.nav{
+    width: 210px;
+    margin-right: 119px;
+}
+.nav--title{
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: #fff;
+}
+.nav--menu__list{
+    padding: 0;
+}
+.nav--menu__item{
+    margin-bottom: 15px;
+}
+.nav--menu__link:hover{
+    text-decoration: underline;
+    color: #FFC41E;
+}
+/* =======================================================================================================
+                                                Events
+=========================================================================================================*/
+.events{
+    background: #FFC41E;
+    padding: 75px 400px;
+}
+.events__header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 55px;
+}
+.events__title{
+    font-size: 30px;
+}
+.events__link{
+    color: #000;
+    text-decoration: underline;
+}
+.events__list{
+    display: flex;
+}
+.event__list--item{
+    margin-right: 30px;
+    color: #2E373B;
+}
+.events__img{
+    margin-bottom: 20px;
+}
+.event__date{
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.event__title{
+    font-size: 21px;
+    color: #F6404F;
+    margin-bottom: 10px;
+}
+.event__text{
+    margin-bottom: 18px;
+}
+/* =======================================================================================================
+                                                News
+=========================================================================================================*/
+.news{
+    background: #FAF3E3;
+    padding: 75px 400px;
+    color: #2E373B;
+}
+.news__inner{
+    display: flex;
+    justify-content: space-between;
+}
+.news__img{
+    width: 455px;
+    height: 215px;
+}
+.first-img{
+    margin-bottom: 59px;
+}
+.news__about--header{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+}
+.news__about--title{
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+.news__about--link{
+    font-size: 21px;
+    color: #2E373B;
+}
+.all__news{
+    display: flex;
+    margin-bottom: 30px;
+}
+.all__news--header{
+    margin-left: 30px;
+    padding-top: 15px;
+}
+.news__date{
+    color: #F6404F;
+    margin-bottom: 14px;
+    display: block;
+}
+/* =======================================================================================================
+                                                News
+=========================================================================================================*/
+.footer{
+    background: #30BCC9;
+    padding: 60px 200px;
+}
+.footer__inner{
+    display: flex;
+    justify-content: space-between;
+}
+.mt{
+    margin-top: 25px;
+}
+.footer__application{
+    color: #fff;
+}
+.application__title{
+    font-size: 30px;
+    margin-bottom: 21px;
+}
+.application__img{
+    display: block;
+}
+.appstore{
+    margin-bottom: 16px;
+}
+.footer__socials{
+    width: 219px;
+}
+.social__title{
+    font-size: 21px;
+    color: #fff;
+    margin-bottom: 30px;
+}
+.social__icons{
+    margin-bottom: 50px;
+}
+.social__link{
+    margin-right: 10px;
+}
+.subscription__title{
+    font-size: 21px;
+    color: #fff;
+    margin-bottom: 15px;
+}
+.subscription__text{
+    font-size: 14px;
+    line-height: 19px;
+    margin-bottom: 25px;
+    color: #fff;
+}
+.subscription__form{
+    display: flex;
+    width: 255px;
+}
+.email{
+    padding: 13px 20px 11px;
+    width: 215px;
+    height: 40px;
+    outline: transparent;
+}
+.send{
+    background: #F6404F;
+    padding: 12px 11px 10px;
+    border: none;
+    width: 40px;
+}
+.send-icon{
+    width: 18px;
+    height: 18px;
+}
+
+
