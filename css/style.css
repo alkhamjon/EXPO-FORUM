@@ -1,4 +1,4 @@
-*,::after,::before{
+*, *::after, *::before{
     box-sizing: border-box;
 }
 body{
@@ -8,6 +8,7 @@ body{
     font-family: Circe;
 }
 .container{
+    width: 100%;
     max-width: 1230px;
     padding: 0 20px;
     margin: 0 auto;
@@ -43,6 +44,28 @@ p{
     align-items: center;
     border-bottom: 1px solid #FFF;
 }
+.menu__btn {
+    width: 35px;
+    height: 24px;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+    display: none;
+    border: none;
+    border-top: 2px solid #fefefe;
+    border-bottom: 2px solid #fefefe;
+    background-color: transparent;
+    position: relative;
+    outline: none;
+}
+.menu__btn::before{
+    content: "";
+    position: absolute;
+    width: 35px;
+    height: 2px;
+    background-color: #fefefe;
+    left: 0;
+    top: 9px;
+}
 .menu__list{
     display: flex;
     justify-content: space-between;
@@ -53,6 +76,9 @@ p{
 .menu__list--link{
     font-weight: normal;
     letter-spacing: 1px;
+}
+.menu__list--link:hover{
+    text-decoration: underline;
 }
 .menu__search{
     display: flex;
@@ -70,20 +96,19 @@ p{
     color: #fff;
 }
 .about__inner{
-    padding-top: 180px;
+    padding: 180px 0 50px;
     color: #fff;
 }
 .about__main--title{
     font-size: 64px;
     font-weight: bold;
     line-height: 2;
-    margin:0 0 35px;
     font-family: Plumb;
 }
 .about__main--text{
     font-size: 24px;
     line-height: 1.8;
-    margin: 0 0 25px;
+    margin: 0 0 10px;
     width: 350px;
 }
 .about__main--link{
@@ -92,7 +117,7 @@ p{
 .arrow{
     margin-left: 10px;
 }
-.block-wrapper__first{
+.block-wrapper{
     display: flex;
     justify-content: flex-end;
 }
@@ -104,7 +129,6 @@ p{
     background: #2378FC;
     margin-right: 30px;
     margin-bottom: 30px;
-    height: 148px;
 }
 .wrapper__item--title{
     font-size: 21px;
@@ -113,11 +137,6 @@ p{
 .second__item{
     background: #30BCC9;
     margin-bottom: 30px;
-    height: 148px;
-}
-.block-wrapper__second{
-    display: flex;
-    justify-content: flex-end;
 }
 .third__item{
     background: #FFC41E;
@@ -135,8 +154,9 @@ p{
 }
 .lower--menu__inner{
     display: flex;
-    justify-content: space-between;
-    text-align: left;
+}
+.lower--menu__item{
+    display: flex;
 }
 .nav{
     width: 210px;
@@ -315,5 +335,156 @@ p{
     width: 18px;
     height: 18px;
 }
-
-
+/* =======================================================================================================
+                                                Media (Responsive)
+=========================================================================================================*/
+@media(max-width: 1600px) {
+.about__lower--menu{
+        padding: 75px 200px;
+}
+}
+@media(max-width: 1400px){
+.menu{
+    padding-left: 80px;
+    padding-right: 80px;
+}
+.menu__list--item{
+    margin-right: 20px;
+}
+.search__icon{
+    margin-right: 30px;
+}
+.about__inner{
+    padding: 40px 0 0;
+}
+.about__main--title{
+    line-height: 1.4;
+}
+.first__item{
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.second__item{
+    margin-bottom: 10px;
+}
+.third__item{
+    margin-right: 10px;
+}
+.wrapper__item--title{
+    font-size: 20px;
+}
+.wrapper__item--link{
+    font-size: 12px;
+}
+.block__item{
+    padding: 10px 30px;
+}
+.about__lower--menu{
+    padding: 75px 150px;
+}
+}
+@media(max-width: 1200px){
+ .menu{
+        padding: 20px 60px;
+}
+.about__inner{
+    padding: 30px 0 0;
+}
+.about__header{
+    padding-left: 30px;
+}
+.about__block-wrapper{
+    padding-top: 50px;
+}
+.block__item{
+    width: 150px;
+    height: 100px;
+    padding: 5px 10px;
+}
+.first__item{
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.second__item{
+    margin-bottom: 10px;
+}
+.third__item{
+    margin-right: 10px;
+}
+.wrapper__item--title{
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.wrapper__item--link{
+    font-size: 12px;
+}
+.about__lower--menu{
+    padding: 75px 20px;
+}
+.lower--menu__inner{
+    padding: 0 20px;
+}
+.nav{
+    margin-right: 50px;
+}
+}
+@media(max-width: 1040px){
+.menu__list{
+    display: none;
+}
+.menu__btn{
+    display: block;
+}
+@media(max-width: 960px){
+.lower--menu__inner{
+    padding: 0;
+}
+.nav{
+    margin-right: 30px;
+}
+.nav--title{
+    font-size: 22px;
+}
+}
+@media(max-width: 880px){
+.lower--menu__inner{
+    display: block;
+}
+.lower--menu__item{
+    padding: 0 20%;
+}
+}
+@media(max-width: 650px){
+.about__main--title{
+    font-size: 46px;
+}
+.about__main--text{
+    font-size: 21px;
+}
+.menu__search{
+    display: none;
+}
+}
+@media(max-width: 500px){
+.about__header{
+        text-align: center;
+}
+.about__main--text{
+    margin: 0 auto 10px;
+}
+.block-wrapper{
+    justify-content: center;
+}
+}
+@media(max-width: 400px){
+.menu{
+    padding: 20px;
+}
+.about__main--title{
+    font-size: 36px;
+}
+.about__main--text{
+    width: 100%;
+    font-size: 18px;
+}
+}
