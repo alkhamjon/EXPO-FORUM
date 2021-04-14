@@ -10,8 +10,7 @@ body {
 }
 
 .container {
-    width: 100%;
-    max-width: 1230px;
+    max-width: 1220px;
     padding: 0 20px;
     margin: 0 auto;
 }
@@ -367,7 +366,7 @@ p {
 }
 
 .footer__socials {
-    width: 219px;
+    width: 300px;
 }
 
 .social__title {
@@ -414,6 +413,7 @@ p {
     padding: 12px 11px 10px;
     border: none;
     width: 40px;
+    height: 40px;
 }
 
 .send-icon {
@@ -426,8 +426,12 @@ p {
 =========================================================================================================*/
 
 @media(max-width: 1600px) {
-    .about__lower--menu {
+    .about__lower--menu,
+    .news{
         padding: 75px 200px;
+    }
+    .footer{
+        padding: 60px 50px;
     }
 }
 
@@ -484,6 +488,12 @@ p {
         width: 100%;
         order: -1;
     }
+    .footer{
+        padding: 60px 20px;
+    }
+    .footer__nav{
+        margin-right: 0;
+    }
 }
 
 @media(max-width: 1200px) {
@@ -535,6 +545,24 @@ p {
     }
     .news{
         padding: 75px 100px;
+    }
+    .footer__inner{
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer__item{
+        display: flex;
+        width: 500px;
+    }
+    .mt{
+        margin: 0;
+    }
+    .footer__socials{
+        display: flex;
+        width: 500px;
+    }
+    .social{
+        width: 445px;
     }
 }
 
@@ -610,6 +638,29 @@ p {
         .news{
             padding: 75px 0;
         }
+        .first-img{
+            margin-bottom: 25px;
+        }
+        .footer__inner{
+            align-items: start;
+        }
+        .footer__item{
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+        .footer__socials{
+            flex-direction: column;
+            align-items: center;
+            margin-top: 30px;
+            width: 100%;
+        }
+        .social{
+            width: 100%;
+        }
+        .footer__subscription{
+            width: 60%;
+        }
     }
     @media(max-width: 500px) {
         .about__header {
@@ -637,6 +688,12 @@ p {
         .events__title{
             font-size: 28px;
         }
+        .footer__item{
+            align-items: start;
+        }
+        .footer__socials{
+            align-items: start;
+        }
     }
     @media(max-width: 400px) {
         .menu {
@@ -648,6 +705,12 @@ p {
         .about__main--text {
             width: 100%;
             font-size: 18px;
+        }
+        .lower--menu__item{
+            align-items: start;
+        }
+        .first-img{
+            margin-bottom: 15px;
         }
         .news__about-link{
             font-size: 12px;
